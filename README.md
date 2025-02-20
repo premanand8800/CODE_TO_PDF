@@ -26,9 +26,21 @@ A powerful Python application that converts code files into beautifully formatte
 
 ### Prerequisites
 
-```bash
-pip install -r requirements.txt
-```
+1. Create a virtual environment:
+   ```bash
+   # Windows
+   python -m venv env
+   env\Scripts\activate
+
+   # Unix/MacOS
+   python -m venv env
+   source env/bin/activate
+   ```
+
+2. Install dependencies:
+   ```bash
+   pip install -r requirements.txt
+   ```
 
 ### Running the Application
 
@@ -38,10 +50,7 @@ pip install -r requirements.txt
    cd code-pdf-converter
    ```
 
-2. Install dependencies:
-   ```bash
-   pip install -r requirements.txt
-   ```
+2. Set up virtual environment and install dependencies (see Prerequisites above)
 
 3. Run the Streamlit app:
    ```bash
@@ -127,7 +136,3 @@ The application uses default settings optimized for most use cases. Key configur
 3. Commit your changes
 4. Push to the branch
 5. Create a Pull Request
-
-## 📜 License
-
-This project is licensed under the MIT License - see the LICENSE file for details.
