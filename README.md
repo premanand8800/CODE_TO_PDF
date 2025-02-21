@@ -1,26 +1,14 @@
-# Code to PDF Converter 📄
+# PPSX-TO-PPT 📊
 
-A powerful Python application that converts code files into beautifully formatted PDF documents with syntax highlighting.
+A powerful Python application that converts PowerPoint Show (PPSX) files to PowerPoint Presentation (PPT) format with preview capabilities.
 
 ## 🌟 Features
 
-- **Multiple Upload Options**
-  - Single file upload
-  - Multiple file upload
-  - Folder upload
-  - ZIP file upload
-
-- **Code Formatting**
-  - Syntax highlighting
-  - Line numbers
-  - Clean code presentation
-  - Multiple programming language support
-
-- **PDF Output**
-  - Professional formatting
-  - Consistent styling
-  - Page numbers
-  - File organization
+- Preview PPSX slides before conversion
+- Convert PPSX to editable PPT format
+- Navigate through slides
+- Preserve all animations and transitions
+- Simple one-click conversion
 
 ## 🚀 Getting Started
 
@@ -31,10 +19,6 @@ A powerful Python application that converts code files into beautifully formatte
    # Windows
    python -m venv env
    env\Scripts\activate
-
-   # Unix/MacOS
-   python -m venv env
-   source env/bin/activate
    ```
 
 2. Install dependencies:
@@ -44,95 +28,12 @@ A powerful Python application that converts code files into beautifully formatte
 
 ### Running the Application
 
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/yourusername/code-pdf-converter.git
-   cd code-pdf-converter
-   ```
-
-2. Set up virtual environment and install dependencies (see Prerequisites above)
-
-3. Run the Streamlit app:
-   ```bash
-   streamlit run pp.py
-   ```
-
-## 💻 Supported Languages
-
-- Python (.py)
-- JavaScript (.js)
-- TypeScript (.ts)
-- Java (.java)
-- C++ (.cpp)
-- C# (.cs)
-- HTML (.html)
-- CSS (.css)
-- PHP (.php)
-- Ruby (.rb)
-- Go (.go)
-- Swift (.swift)
-- And many more!
-
-## 🎨 Features in Detail
-
-### Syntax Highlighting
-- Modern color scheme
-- Clear distinction between different code elements
-- Support for dark theme
-
-### Code Organization
-- Hierarchical file structure
-- Clean page breaks
-- Continuation markers for long files
-
-### PDF Generation
-- Professional formatting
-- Consistent styling across different languages
-- Optimized for readability
-
-## 🛠️ Technical Details
-
-### Dependencies
-- streamlit
-- reportlab
-- pygments
-- html2text
-- tqdm
-
-### File Structure
-```
-code-pdf-converter/
-├── pp.py              # Main application file
-├── requirements.txt   # Python dependencies
-├── .gitignore        # Git ignore file
-└── README.md         # Documentation
+```bash
+streamlit run ps.py
 ```
 
-## 📝 Usage Instructions
+## 💻 Requirements
 
-1. Open the application in your web browser
-2. Choose your upload method:
-   - Drag and drop files
-   - Select individual files
-   - Upload a ZIP archive
-   - Drop an entire folder
-3. Preview your code files (optional)
-4. Click "Generate PDF" button
-5. Download the generated PDF
-
-## ⚙️ Configuration
-
-The application uses default settings optimized for most use cases. Key configurations:
-
-- Page size: Letter
-- Margins: 30px
-- Font size: 10pt
-- Lines per page: ~50
-
-## 🤝 Contributing
-
-1. Fork the repository
-2. Create your feature branch
-3. Commit your changes
-4. Push to the branch
-5. Create a Pull Request
+- Microsoft PowerPoint (installed on the server)
+- Python 3.7+
+- Required Python packages (see requirements.txt)
